@@ -64,8 +64,8 @@ extension Date {
 }
 
 func getAvailableTimesForToday(excluding excludedTimes: [ClosedRange<Date>]) -> [ClosedRange<Date>] {
-  let startOfWorkDay = Calendar.current.date(bySettingHour: 9, minute: 0, second: 0, of: startOfToday)!
-  let endOfWorkDay = Calendar.current.date(bySettingHour: 17, minute: 0, second: 0, of: startOfToday)!
+  let startOfWorkDay = Calendar.current.date(bySettingHour: 10, minute: 0, second: 0, of: startOfToday)!
+  let endOfWorkDay = Calendar.current.date(bySettingHour: 19, minute: 0, second: 0, of: startOfToday)!
   let workDay = startOfWorkDay...endOfWorkDay
 
   let busyTimes = [startOfToday...startOfWorkDay] + excludedTimes + [endOfWorkDay...endOfToday]
