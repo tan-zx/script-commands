@@ -2,7 +2,7 @@
 
 # Required parameters:
 # @raycast.schemaVersion 1
-# @raycast.title Toggle Trackpad Pinch
+# @raycast.title Reset Trackpad Pinch
 # @raycast.mode compact
 
 # Optional parameters:
