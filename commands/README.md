@@ -40,8 +40,10 @@ This repository contains sample commands and documentation to write your own one
   - [Ferdi](#ferdi)
   - [Focus](#focus)
   - [HazeOver](#hazeover)
+  - [Hyper](#hyper)
   - [Lungo](#lungo)
   - [Mail](#mail)
+  - [Medo](#medo)
   - [MeetingBar](#meetingbar)
   - [Mullvad](#mullvad)
   - [NotePlan3](#noteplan3)
@@ -53,14 +55,15 @@ This repository contains sample commands and documentation to write your own one
   - [Plash](#plash)
   - [Playground](#playground)
   - [Pulse Secure](#pulse-secure)
+  - [Raycast](#raycast)
   - [Reminders](#reminders)
   - [Safari](#safari)
-  - [Script Kit](#script-kit)
   - [Session](#session)
   - [SideNotes](#sidenotes)
   - [Sip](#sip)
   - [Surfshark](#surfshark)
   - [Tailscale](#tailscale)
+  - [Terminal Translate](#terminal-translate)
   - [Things](#things)
   - [Todoist](#todoist)
   - [Translate Shell](#translate-shell)
@@ -88,7 +91,9 @@ This repository contains sample commands and documentation to write your own one
   - [Change Case](#change-case)
 - [Dashboard](#dashboard)
   - [Countdowns](#countdowns)
+  - [Firebase](#firebase)
   - [Mood Meter](#mood-meter)
+  - [Open Weather](#open-weather)
 - [Developer Utils](#developer-utils)
   - [Aws](#aws)
   - [Brew](#brew)
@@ -125,6 +130,9 @@ This repository contains sample commands and documentation to write your own one
   - [stopwatch](#stopwatch)
   - [tesseract](#tesseract)
 - [Remote Control](#remote-control)
+  - [Ddc](#ddc)
+    - [Arm64](#arm64)
+    - [X86](#x86)
   - [Denon AVR](#denon-avr)
   - [LG TV](#lg-tv)
   - [Samsung TV](#samsung-tv)
@@ -296,6 +304,12 @@ This repository contains sample commands and documentation to write your own one
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/hazeover/images/hazeover.png" width="20" height="20"> | [Set Intensity](apps/hazeover/hazeover-set-intensity.applescript) | Set dimming intensity of background windows. | [Thomas Paul Mann](https://github.com/thomaspaulmann) | ✅ |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/hazeover/images/hazeover.png" width="20" height="20"> | [Toggle Dimming](apps/hazeover/hazeover-toggle-dimming.applescript) | Toggle dimming of all background windows. | [Thomas Paul Mann](https://github.com/thomaspaulmann) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
 
+#### Hyper
+
+| Icon | Title | Description | Author | Args | Templ | Lang |
+| :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
+  | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/hyper/images/hyper.png" width="20" height="20"> | [Run Shell Command](apps/hyper/hyper-run-shell-command.applescript) | Run a terminal using Hyper | [Eliot Hertenstein](https://github.com/eIiot) | ✅ |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
+
 #### Lungo
 
 | Icon | Title | Description | Author | Args | Templ | Lang |
@@ -309,6 +323,15 @@ This repository contains sample commands and documentation to write your own one
 | Icon | Title | Description | Author | Args | Templ | Lang |
 | :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
   | 📧 | [Copy Foreground Mail Deeplink](apps/mail/copy-foreground-mail-deeplink.applescript) | Copies the foreground Mail deeplink | [Jesse Claven](https://github.com/jesse-c) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
+
+#### Medo
+
+| Icon | Title | Description | Author | Args | Templ | Lang |
+| :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
+  | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/medo/./images/medo.png" width="20" height="20"> | [Add Task](apps/medo/add-task.sh) | Add a new task | [Aayush ](https://github.com/Aayush9029) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/medo/./images/medo.png" width="20" height="20"> | [Medo Float](apps/medo/medo-float.sh) | Add a new task with priority  | [Aayush ](https://github.com/Aayush9029) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/medo/./images/medo.png" width="20" height="20"> | [Medo Float Large](apps/medo/medo-float-large.sh) | Add a new task with priority  | [Aayush ](https://github.com/Aayush9029) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/medo/./images/medo.png" width="20" height="20"> | [Medo Float Small](apps/medo/medo-float-small.sh) | Add a new task with priority  | [Aayush ](https://github.com/Aayush9029) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
 
 #### MeetingBar
 
@@ -399,6 +422,12 @@ This repository contains sample commands and documentation to write your own one
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/pulse-secure/images/pulse-secure.png" width="20" height="20"> | [Resume](apps/pulse-secure/pulse-secure-resume.applescript) | Resume the suspended connection. | [Jakub Lanski](https://github.com/jaklan) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/pulse-secure/images/pulse-secure.png" width="20" height="20"> | [Suspend](apps/pulse-secure/pulse-secure-suspend.applescript) | Suspend the active connection. | [Jakub Lanski](https://github.com/jaklan) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
 
+#### Raycast
+
+| Icon | Title | Description | Author | Args | Templ | Lang |
+| :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
+  | 🎉 | [Celebrate](apps/raycast/celebrate.sh) | Set Confetti to run for a number of times and during intervals | [Fatpandac](https://github.com/Fatpandac) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+
 #### Reminders
 
 | Icon | Title | Description | Author | Args | Templ | Lang |
@@ -419,12 +448,6 @@ This repository contains sample commands and documentation to write your own one
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/safari/images/safari.png" width="20" height="20"> | [Duplicate Tab](apps/safari/safari-duplicate-tab.applescript) | Duplicates and opens the currently active tab. | [Thomas Paul Mann](https://github.com/thomaspaulmann) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/safari/images/safari.png" width="20" height="20"> | [Open Safari URL in Chrome](apps/safari/safari-current-page-url-in-chrome.applescript) | Open current Safari URL in new tab in Chrome | [Dave Lehman](https://github.com/dlehman) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/safari/images/safari.png" width="20" height="20"> | [Open Safari URL in Firefox](apps/safari/safari-current-page-url-in-firefox.applescript) | Open current Safari URL in new tab in Firefox | [Dave Lehman](https://github.com/dlehman) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
-
-#### Script Kit
-
-| Icon | Title | Description | Author | Args | Templ | Lang |
-| :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
-  | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/script-kit/./images/kit_logo.png" width="20" height="20"> | [Import scripts from Script Kit](apps/script-kit/import-scripts-from-script-kit.py) | Convert all Script Kit scripts to Raycast Script Commands | [Achille Lacoin](https://github.com/pomdtr) |  |  | <img src="images/icon-python.png" width="20" height="20" title="Python"> |
 
 #### Session
 
@@ -467,6 +490,12 @@ This repository contains sample commands and documentation to write your own one
   | <picture><source srcset="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/tailscale/./images/tailscale-iconDark.png" media="(prefers-color-scheme: dark)"><img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/tailscale/./images/tailscale-icon.png" width="20" height="20"></picture> | [Disconnect](apps/tailscale/tailscale-disconnect.sh) | Disconnects from Tailscale | [Ross Zurowski](https://github.com/rosszurowski) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <picture><source srcset="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/tailscale/./images/tailscale-iconDark.png" media="(prefers-color-scheme: dark)"><img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/tailscale/./images/tailscale-icon.png" width="20" height="20"></picture> | [Get IP](apps/tailscale/tailscale-ip.sh) | Gets your private Tailscale IP | [Ross Zurowski](https://github.com/rosszurowski) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <picture><source srcset="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/tailscale/./images/tailscale-iconDark.png" media="(prefers-color-scheme: dark)"><img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/apps/tailscale/./images/tailscale-icon.png" width="20" height="20"></picture> | [Switch Account](apps/tailscale/tailscale-switch.sh) | Switches Tailscale networks | [Ross Zurowski](https://github.com/rosszurowski) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+
+#### Terminal Translate
+
+| Icon | Title | Description | Author | Args | Templ | Lang |
+| :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
+  | 📖 | [Translate](apps/terminal-translate/translate.sh) | Translate word or sentence. | [Fatpandac](https://github.com/Fatpandac) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
 
 #### Things
 
@@ -572,7 +601,7 @@ This repository contains sample commands and documentation to write your own one
   | 🧭 | [Copy Current Page URL](browsing/safari-current-page-url.sh) | This script copies URL of currently opened page in Safari into clipboard. | [Kirill Gorbachyonok](https://github.com/japanese-goblinn) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🧭 | [Copy Current Page URL](browsing/chrome-current-page-url.sh) | This script copies URL of currently opened page in Google Chrome into clipboard. | [Jakub Lanski](https://github.com/jaklan) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🧭 | [Copy Current Window URLs](browsing/safari-current-window-urls.applescript) | This script copies to clipboard all URLs from frontmost Safari window. | [Kirill Gorbachyonok](https://github.com/japanese-goblinn) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
-  | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/browsing/./images/shlink.png" width="20" height="20"> | [Create Short URL](browsing/shlink-create-short-url.template.sh) | N/A | [Eliot Hertenstein](https://github.com/eIiot) | ✅ | ✅ | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/browsing/./images/shlink.png" width="20" height="20"> | [Create Short URL](browsing/shlink-create-short-url.template.sh) | Create a short URL using Shlink | [Eliot Hertenstein](https://github.com/eIiot) | ✅ | ✅ | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🥽 | [Current Website to Private Browser](browsing/to-private-browsing.sh) | Open the current site in a private browser | [raulanatol](https://github.com/raulanatol) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/browsing/images/outline.png" width="20" height="20"> | [Go to Outline](browsing/go-to-outine.sh) | Open the website at Outline | [Ronan Rodrigo Nunes](https://ronanrodrigo.dev) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/browsing/images/peekalink-logo.png" width="20" height="20"> | [Peek a link](browsing/peekalink.template.sh) | Use [Peekalink.io](https://peekalink.io) API to peek specified URL. | [Caleb Stauffer](https://github.com/crstauf) | ✅ | ✅ | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
@@ -667,6 +696,7 @@ This repository contains sample commands and documentation to write your own one
   | 🎨 | [Hex to RGB](conversions/hex-to-rgb.sh) | Convert hexadecimal color value to RGB value. | [Caleb Stauffer](https://github.com/crstauf) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🎨 | [Hex to RGBA](conversions/hex-to-rgba.sh) | Convert hexadecimal color value to RGBA value. | [Caleb Stauffer](https://github.com/crstauf) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🧱 | [Markdown Table](conversions/create-markdown-table.js) | Create a markdown table template | [Ryan Nystrom](https://github.com/rnystrom) | ✅ |  | <img src="images/icon-nodejs.png" width="20" height="20" title="Node"> |
+  | 📋 | [Paste and Match Style](conversions/paste-as-plain-text.applescript) | A script to click the "Paste and Match Style" menu item, even if it's disabled | [Michael Bianco](https://github.com/iloveitaly) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/conversions/images/qrcode.png" width="20" height="20"> | [QR Code Generation](conversions/qrcode-generate.sh) | QR Code Generation | [wyhaya](https://github.com/wyhaya) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 📝 | [Rich Text to Markdown](conversions/rich-text-clipboard-to-markdown.sh) | Convert rich text clipboard data to GitHub Flavored Markdown using Pandoc | [Adam Zethraeus](https://github.com/adam-zethraeus) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   |  | [Screenshot QR Code to Clipboard](conversions/qr-code-screenshot-to-text.sh) | Decode QR Code from screenshot to clipboard using https://qrserver.com/ | [Diego Lopes](https://github.com/Dihgg) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
@@ -698,6 +728,7 @@ This repository contains sample commands and documentation to write your own one
   | 🌦️ | [Current Weather](dashboard/current-weather.sh) | Get current weather report from [wttr.in](https://wttr.in/). | [Caleb Stauffer](https://github.com/crstauf) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/dashboard/images/dogecoin-logo.png" width="20" height="20"> | [DOGE Price](dashboard/doge.sh) | Checking DOGE coin price | [Clu Soh](https://github.com/designedbyclu) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/dashboard/images/ethereum-logo.png" width="20" height="20"> | [Ethereum Price](dashboard/ethereum-price-usd.sh) | Get current Ethereum price from CoinGecko. | [Clark Dinnison](https://github.com/cdinnison) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  |  | [Fear Index](dashboard/fear-index.sh) | Fear & Greed Index from CNN | [Astrit](https://github.com/astrit) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/dashboard/images/precious-metals.png" width="20" height="20"> | [Metals Price](dashboard/precious-metals.sh) | Retrieves the value of precious metals per 1 oz | [Stefan de Graaf](https://github.com/DBZFYAM) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/dashboard/images/nextdns.png" width="20" height="20"> | [NextDNS Status](dashboard/nextdns-status-check.py) | Check if this machine is using NextDNS. | [Phil Salant](https://github.com/PSalant726) |  |  | <img src="images/icon-python.png" width="20" height="20" title="Python"> |
   | 🤖 | [SABnzbd Queue](dashboard/sabnzbd-queue-status.template.sh) | Show SABnzbd's queue status | [Jesse Claven](https://github.com/jesse-c) |  | ✅ | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
@@ -717,6 +748,12 @@ This repository contains sample commands and documentation to write your own one
   | ⏱ | [Countdown to Date](dashboard/countdowns/countdown-to-date.template.sh) | See how many days/hours until a specific date. | [Valentin Chrétien](https://github.com/valentinchrt) |  | ✅ | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | ⏱ | [Create Countdown](dashboard/countdowns/create-countdown.template.sh) | Create countdowns via Raycast. | [Valentin Chrétien](https://github.com/valentinchrt) | ✅ | ✅ | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
 
+#### Firebase
+
+| Icon | Title | Description | Author | Args | Templ | Lang |
+| :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
+  | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/dashboard/firebase/images/firebase.png" width="20" height="20"> | [Get data from Firebase](dashboard/firebase/firebase-realtime-db-get-data.template.sh) | Get values from Firebase Realtime Database | [Marek Mašek](https://github.com/marekmasek) |  | ✅ | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+
 #### Mood Meter
 
 | Icon | Title | Description | Author | Args | Templ | Lang |
@@ -724,6 +761,13 @@ This repository contains sample commands and documentation to write your own one
   | ☕️ | [Add Mood](dashboard/mood-meter/add-mood.js) | Add mood value to current or specified date  | [Federico Miraglia](https://github.com/Mitra98t) | ✅ |  | <img src="images/icon-nodejs.png" width="20" height="20" title="Node"> |
   | ☕️ | [Display Mood Month](dashboard/mood-meter/display-mood-month.js) | Displays month mood table  | [Federico Miraglia](https://github.com/Mitra98t) |  |  | <img src="images/icon-nodejs.png" width="20" height="20" title="Node"> |
   | ☕️ | [Display Mood Year](dashboard/mood-meter/display-mood-year.js) | Displays year mood table  | [Federico Miraglia](https://github.com/Mitra98t) | ✅ |  | <img src="images/icon-nodejs.png" width="20" height="20" title="Node"> |
+
+#### Open Weather
+
+| Icon | Title | Description | Author | Args | Templ | Lang |
+| :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
+  | ⛅️ | [Current Weather](dashboard/open-weather/weather-current.template.sh) | Get current weather from OpenWeather | [Marek Mašek](https://github.com/marekmasek) |  | ✅ | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | ⛅️ | [Weather Forecast](dashboard/open-weather/weather-forecast.template.sh) | Get weather forecast from OpenWeather | [Marek Mašek](https://github.com/marekmasek) |  | ✅ | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
 
 ## Developer Utils
 
@@ -737,6 +781,7 @@ This repository contains sample commands and documentation to write your own one
   | 🧹 | [Clear All Related Junk](developer-utils/clear_xcode.sh) | This script clears all Xcode related junk. | [Kirill Gorbachyonok](https://github.com/japanese-goblinn) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🧹 | [Clear Derived Data](developer-utils/clear-derived-data.sh) | Clear the derived data of Xcode. | Raycast |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | ⏱️ | [Copy Current Epoch Unix Timestamp](developer-utils/unix-timestamp.sh) | Copy the current epoch Unix timestamp. | [Caleb Stauffer](https://github.com/crstauf) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | 📁 | [Copy Focused Finder Window Path](developer-utils/copy-focused-finder-window-path.sh) | Copies full path of the currently focused Finder window | [Vishal Telangre](https://github.com/vishaltelangre) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 📝 | [Copy Lorem Ipsum](developer-utils/lorem-ipsum.sh) | Copy one paragraph of Lorem Ipsum to clipboard. | Raycast |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🤖 | [Count Characters Bash](developer-utils/count-characters.sh) | Counts the characters of either the clipboard or the passed argument | es183923 | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🤐 | [Create .gitignore](developer-utils/generate-git-ignore.sh) | Generates a .gitignore file via https://gitignore.io | [Roland Leth](https://runtimesharks.com) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
@@ -793,6 +838,7 @@ This repository contains sample commands and documentation to write your own one
 
 | Icon | Title | Description | Author | Args | Templ | Lang |
 | :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
+  | 🍺 | [Cask Upgrade](developer-utils/brew/brew-cask-upgrade.sh) | Updates brew and upgrades every outdated app | [LanikSJ](https://github.com/LanikSJ) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🍺 | [Doctor](developer-utils/brew/brew-doctor.sh) | Run Brew Doctor | [Thiago Holanda](https://twitter.com/tholanda) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🍺 | [Install a package](developer-utils/brew/brew-install.sh) | Installs specified brew package. | [Alex Zotov](https://github.com/lex4hex) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🍺 | [Leaves](developer-utils/brew/brew-leaves.sh) | Show list of installed brew formulae that are not dependencies of other installed formula. | [owpac](https://github.com/Owpac) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
@@ -802,6 +848,7 @@ This repository contains sample commands and documentation to write your own one
   | 🍺 | [Services List](developer-utils/brew/brew-services-list.sh) | Show Brew Services List | [Thiago Holanda](https://twitter.com/tholanda) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🍺 | [Start Service](developer-utils/brew/brew-services-start.sh) | Start Service in Brew | [Thiago Holanda](https://twitter.com/tholanda) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🍺 | [Stop Service](developer-utils/brew/brew-services-stop.sh) | Stop Service in Brew | [Thiago Holanda](https://twitter.com/tholanda) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | 🍺 | [Uninstall](developer-utils/brew/brew-uninstall-application.sh) | Uninstalls an Specified Application Using Homebrew | [StevenRCE0](https://github.com/StevenRCE0) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🍺 | [Update](developer-utils/brew/brew-update.sh) | Run Brew Update | [chengzhiqi](https://twitter.com/1872Fate) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🍺 | [Upgrade](developer-utils/brew/brew-upgrade.sh) | Run Brew Upgrade | [Thiago Holanda](https://twitter.com/tholanda) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
 
@@ -1047,6 +1094,7 @@ This repository contains sample commands and documentation to write your own one
   | 🔍 | [Open Finder](navigation/open-finder.sh) | Open Finder at Home folder or argument location | [Afraz](https://github.com/afrazkhan) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/navigation/images/folder-home.png" width="20" height="20"> | [Open Home](navigation/open-home.sh) | Opens the Home folder in the Finder. | Raycast |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/navigation/./images/pixelmator-pro-2.0.png" width="20" height="20"> | [Open Image From Clipboard](navigation/open-clipboard-in-pixelmator-pro.applescript) | Creates a new document in Pixelmator Pro from the image stored in your clipboard. | [Bryce Carr](https://github.com/bdcarr) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
+  | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/navigation/images/folder-downloads.png" width="20" height="20"> | [Open Last Downloaded](navigation/open-last-downloaded.sh) | Opens the last file that was downloaded | Raycast |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/navigation/images/folder-library.png" width="20" height="20"> | [Open Library](navigation/open-library.sh) | Opens the Library folder in the Finder. | Raycast |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🌐 | [Open URL From Clipboard](navigation/open-url-from-clipboard.sh) | Opens the URL in the clipboard. | Raycast |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/navigation/images/quit.png" width="20" height="20"> | [Quit Application](navigation/quit-application.applescript) | Quit the application. Edit the command to change the default values (Application: "", Force quit?: "No"). | [Jakub Lanski](https://github.com/jaklan) | ✅ |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
@@ -1114,6 +1162,20 @@ This repository contains sample commands and documentation to write your own one
   | 🔍 | [OCR Screenshot](productivity/tesseract/tesseract-ocr.sh) | Tesseract OCR | [Diego Lopes](https://github.com/Dihgg) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
 
 ## Remote Control
+
+#### Arm64
+
+| Icon | Title | Description | Author | Args | Templ | Lang |
+| :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
+  | 📺 | [Switch to DP](remote-control/ddc/arm64/screen-dp.sh) | This script will switch the external display screen to DP. | goodhyun |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | 📺 | [Switch to HDMI](remote-control/ddc/arm64/screen-hdmi.sh) | This script will switch the external display screen to HDMI. | goodhyun |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+
+#### X86
+
+| Icon | Title | Description | Author | Args | Templ | Lang |
+| :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
+  | 📺 | [Switch to DP](remote-control/ddc/x86/screen-dp.sh) | This script will switch the external display screen to DP. | goodhyun |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | 📺 | [Switch to HDMI](remote-control/ddc/x86/screen-hdmi.sh) | This script will switch the external display screen to HDMI. | goodhyun |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
 
 #### Denon AVR
 
@@ -1190,6 +1252,7 @@ This repository contains sample commands and documentation to write your own one
 | Icon | Title | Description | Author | Args | Templ | Lang |
 | :--: | ----- | ----------- | :----: | :--: | :---: | :--: |
   | 💻 | [Add Spacer to Dock](system/add-spacer-to-dock.sh) | Adds an invisible icon to the Dock as a separator. | [Alexandru Turcanu](https://github.com/Pondorasti) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | 🔋 | [Battery Info](system/battery-info.sh) | Get Battery percentage, time remaining, charge status, charger wattage, total cycles etc. | [Fahim Faisal](https://github.com/i3p9) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | ☀️ | [Brightness](system/brightness.sh) | Set system brightness | [Antonio Dal Sie](https://github.com/exodusanto) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | ☕️ | [Caffeinate](system/caffeinate-status.swift) | Shows caffeinate status and time left if it's running | [Yan Smaliak](https://github.com/ysmaliak) |  |  | <img src="images/icon-swift.png" width="20" height="20" title="Swift"> |
   | ☕️ | [Caffeinate](system/caffeinate-status.sh) | Shows caffeinate status | [Yan Smaliak](https://github.com/ysmaliak) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
@@ -1197,6 +1260,7 @@ This repository contains sample commands and documentation to write your own one
   | 💻 | [Capture Fullscreen to Desktop](system/capture-fullscreen-to-desktop.sh) | This script screenshots the entire screen and saves it to the desktop. | [Aaron Miller](https://github.com/aaronhmiller) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 💻 | [Capture Screen Selection to Clipboard](system/capture-screen-selection-to-clipboard.sh) | This script screenshots the selected area and saves it to the clipboard. | [Aaron Miller](https://github.com/aaronhmiller) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 💻 | [Capture Screen Selection to Desktop](system/capture-screen-selection-to-desktop.sh) | This script screenshots the selected area and saves it to the desktop. | [Aaron Miller](https://github.com/aaronhmiller) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | 🔪 | [Close All Finder Windows](system/close-finder-windows.applescript) | Close all open Finder windows.  | [Alexander Steffen](https://github.com/alexjsteffen) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
   | 📅 | [Copy Availability](system/copy-availability.swift) | Copies the calendar availability of today. | Raycast |  |  | <img src="images/icon-swift.png" width="20" height="20" title="Swift"> |
   | 💁 | [Copy Last Download](system/copy-last-download.swift) | Copy the last downloaded file to the clipboard. | Raycast |  |  | <img src="images/icon-swift.png" width="20" height="20" title="Swift"> |
   | 📸 | [Copy Last Screenshot](system/copy-last-screenshot.swift) | Copies the last screenshot to the clipboard. | Raycast |  |  | <img src="images/icon-swift.png" width="20" height="20" title="Swift"> |
@@ -1218,9 +1282,11 @@ This repository contains sample commands and documentation to write your own one
   | ⚠️ | [Kill Running Process](system/kill-process.sh) | Force kill a running process | [Gustavo Santana](https://github.com/gumadeiras) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 📈 | [Largest CPU Process](system/largest-cpu-process.sh) | Report process with largest system CPU usage. | [Caleb Stauffer](https://github.com/crstauf) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 📈 | [Largest RAM Process](system/largest-ram-process.sh) | Report process with largest system RAM usage. | [Caleb Stauffer](https://github.com/crstauf) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
+  | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/system/images/minimize-window.png" width="20" height="20"> | [Minimize All Windows](system/minimize-all-windows.applescript) | This script minimizes all windows of currently running apps | [Ernest Ojeh](https://github.com/namzo) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
   | 🌵 | [Modify File Extension](system/modify-extension.sh) | Batch modify the file in the current directory or the specified extension of the selected file | [LokHsu](https://github.com/lokhsu) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🗑 | [Move Desktop to Trash](system/move-desktop-to-trash.applescript) | Empty the desktop. | [Seypopi](https://github.com/Seypopi) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
   | <img src="https://raw.githubusercontent.com/raycast/script-commands/master/commands/system/images/move-downloads-to-trash.png" width="20" height="20"> | [Move Downloads to Trash](system/move-downloads-to-trash.applescript) | N/A | Jax0rz |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
+  | 🌐 | [Network Quality](system/network-quality.sh) | N/A | [Archie Lacoin](https://github.com/pomdtr) and [LanikSJ](https://github.com/LanikSJ) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 📶 | [Network Status](system/network-status.sh) | Get current network connections. | [Alexandru Turcanu](https://github.com/Pondorasti) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 📁 | [Open Folder](system/open-folder.sh) | Open a folder on macOS  | [Bin Hua](https://github.com/hzb) | ✅ |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 💁‍♂️ | [Open Last Download](system/open-last-download.swift) | Opens the last downloaded file. | Raycast |  |  | <img src="images/icon-swift.png" width="20" height="20" title="Swift"> |
@@ -1233,6 +1299,7 @@ This repository contains sample commands and documentation to write your own one
   | 💀 | [Restart the Finder](system/restart-finder.sh) | Restart the Finder | [Jordi Clement](https://github.com/jordicl) |  |  | <img src="images/icon-bash.png" width="20" height="20" title="Bash"> |
   | 🔡 | [Running processes](system/list-processes.rb) | List running app showing their process id, CPU usage, name, and optionally the process path. | [Roland Leth](https://runtimesharks.com) | ✅ |  | <img src="images/icon-ruby.png" width="20" height="20" title="Ruby"> |
   | 🎨 | [Sample Color](system/sample-color.swift) | Sample a color from anywhere on your screen. | [Jesse Claven](https://github.com/jesse-c) |  |  | <img src="images/icon-swift.png" width="20" height="20" title="Swift"> |
+  | 🤖 | [Save Image From Clipboard](system/save-image-from-clipboard.py) | Save Image From Clipboard | [Yufei Kang](kangyufei.net) and [LanikSJ](https://github.com/LanikSJ) |  |  | <img src="images/icon-python.png" width="20" height="20" title="Python"> |
   | 🌀 | [Screen Saver](system/screensaver.applescript) | A script command to start your current screen saver. | [Valentin Chrétien](https://twitter.com/valentinchrt) |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
   | 🧭 | [Set Frontmost App as Default Browser](system/default-browser-front-most-app.applescript) | Set Frontmost Web Browser as Default Browser. | [Yohanes Bandung Bondowoso](https://github.com/ybbond) | ✅ |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
   | 🛌 | [Shut Down](system/shutdown.applescript) | Shuts down computer. | Raycast |  |  | <img src="images/icon-applescript.png" width="20" height="20" title="AppleScript"> |
